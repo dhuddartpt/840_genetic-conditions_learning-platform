@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Genetic Conditions Clinical Reasoning Platform</title>
+<style>
+body { font-family: Arial; margin: 20px; background:#f4f6f8; }
+.card { background:white; padding:20px; margin-bottom:20px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1);} 
+h3 { margin-top:0; }
+button { padding:8px 12px; margin-top:10px; }
+.hidden { display:none; }
+textarea { width:100%; height:80px; margin-top:5px; }
+.ethics { background:#eef3ff; border-left:5px solid #4a6cf7; }
+</style>
+<script>
+function toggle(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</head>
+<body>
+
+<h1>Genetic Conditions: Clinical Reasoning Platform</h1>
+<p><strong>Objective:</strong> Given family history and presentation, apply genetic risk considerations to select targeted screening questions and determine appropriate referral triggers.</p>
+
+<div class="card">
+<h3>Case 1</h3>
+<p>A 12-year-old presents with frequent fractures, blue sclera, and reports that their mother had similar issues growing up.</p>
+
+<label>1. What genetic condition is suspected?</label>
+<textarea></textarea>
+
+<label>2. What exam findings would you expect?</label>
+<textarea></textarea>
+
+<label>3. What PT interventions are appropriate?</label>
+<textarea></textarea>
+
+<button onclick="toggle('ans1')">Show Faculty Guide</button>
+<div id="ans1" class="hidden">
+<p><strong>Osteogenesis Imperfecta</strong><br>
+Findings: Fragile bones, scoliosis<br>
+Interventions: Low-load strengthening, education<br>
+Precautions: Avoid high impact</p>
+</div>
+</div>
+
+<div class="card">
+<h3>Case 2</h3>
+<p>A 45-year-old presents with progressive chorea, cognitive decline, and a father with similar symptoms.</p>
+
+<label>1. What genetic condition is suspected?</label>
+<textarea></textarea>
+
+<label>2. What exam findings would you expect?</label>
+<textarea></textarea>
+
+<label>3. What PT interventions are appropriate?</label>
+<textarea></textarea>
+
+<button onclick="toggle('ans2')">Show Faculty Guide</button>
+<div id="ans2" class="hidden">
+<p><strong>Huntington Disease</strong><br>
+Findings: Chorea, balance deficits<br>
+Interventions: Balance training, safety<br>
+Precautions: Fall risk</p>
+</div>
+</div>
+
+<div class="card">
+<h3>Case 3</h3>
+<p>A 6-year-old boy presents with frequent falls, Gowers' sign, and calf pseudohypertrophy. Family history reveals an uncle with early wheelchair use.</p>
+
+<label>1. What genetic condition is suspected?</label>
+<textarea></textarea>
+
+<label>2. What exam findings would you expect?</label>
+<textarea></textarea>
+
+<label>3. What PT interventions are appropriate?</label>
+<textarea></textarea>
+
+<button onclick="toggle('ans3')">Show Faculty Guide</button>
+<div id="ans3" class="hidden">
+<p><strong>Duchenne Muscular Dystrophy</strong><br>
+Findings: Progressive weakness<br>
+Interventions: Stretching, function preservation<br>
+Precautions: Avoid overfatigue</p>
+</div>
+</div>
+
+<div class="card">
+<h3>Case 4</h3>
+<p>A 25-year-old presents with joint hypermobility, frequent dislocations, and skin elasticity.</p>
+
+<label>1. What genetic condition is suspected?</label>
+<textarea></textarea>
+
+<label>2. What exam findings would you expect?</label>
+<textarea></textarea>
+
+<label>3. What PT interventions are appropriate?</label>
+<textarea></textarea>
+
+<button onclick="toggle('ans4')">Show Faculty Guide</button>
+<div id="ans4" class="hidden">
+<p><strong>Ehlers-Danlos Syndrome</strong><br>
+Findings: Hypermobility, instability<br>
+Interventions: Stability training<br>
+Precautions: Avoid overstretching</p>
+</div>
+</div>
+
+<div class="card ethics">
+<h3>Ethical Considerations (Faculty Guidance)</h3>
+
+<p><strong>Genetic Testing Privacy:</strong><br>
+Patient genetic data is highly sensitive. PTs must ensure compliance with HIPAA and avoid unnecessary sharing of genetic information. Only relevant clinical information should be documented and communicated.</p>
+
+<p><strong>Discrimination Risk:</strong><br>
+Patients may face discrimination in employment or insurance based on genetic information. While laws like GINA provide protection, gaps still exist (e.g., life insurance). PTs should avoid labeling or documenting genetic risks in ways that could unintentionally harm patients.</p>
+
+<p><strong>Direct-to-Consumer Genetic Tests:</strong><br>
+Results from commercial tests (e.g., 23andMe) may lack clinical validity or context. PTs should not make clinical decisions based solely on these results and should encourage confirmation through medical-grade testing when appropriate.</p>
+
+<p><strong>Clinical Decision-Making:</strong><br>
+Genetic information should inform—but not dictate—care. PTs must integrate genetics with presentation, environment, and behavior.</p>
+
+<p><strong>Referral Triggers:</strong><br>
+Refer to physicians or genetic counselors when:
+<ul>
+<li>Strong family history of progressive or unexplained conditions</li>
+<li>Early onset of atypical impairments</li>
+<li>Rapid functional decline without clear cause</li>
+</ul>
+</p>
+
+<p><strong>Key Takeaway:</strong><br>
+PTs should interpret genetic information cautiously, prioritize patient safety, and collaborate closely with physicians and genetic counselors to ensure appropriate management.</p>
+
+</div>
+
+</body>
+</html>
